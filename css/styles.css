@@ -436,8 +436,13 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-form {
+.footer-wrapper {
   display: inline-block;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
 }
 .footer-form-input {
   border: 1px solid #fff;
@@ -446,7 +451,7 @@ img {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-right: 16px;
+  /* margin-right: 16px; */
   padding: 8px 16px;
 }
 
@@ -457,7 +462,7 @@ img {
   color: #fff;
 }
 .footer-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;

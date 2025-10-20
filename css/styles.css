@@ -695,7 +695,6 @@ img {
   width: 16px;
   height: 16px;
 
-  color: transparent;
   fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -709,11 +708,16 @@ img {
 input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
   background-color: #404bbf;
   border: none;
-  color: #f4f4fd;
+}
+input[type="checkbox"]:checked
+  + .agreement-wrapper
+  > .agreement-checkbox
+  > .agreement-checkbox-icon {
+  fill: #f4f4fd;
 }
 
 .agreement-checkbox-icon {
-  fill: currentColor;
+  fill: transparent;
 }
 
 .agreement-wrapper {

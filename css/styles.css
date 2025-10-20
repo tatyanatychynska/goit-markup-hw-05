@@ -614,8 +614,9 @@ img {
   fill: #4d5ae5;
 }
 
-.modal-form-input:user-invalid {
-  border-color: red;
+.modal-form-input:user-invalid,
+.modal-form-comment:user-invalid {
+  border-color: rgb(245, 87, 66);
 }
 
 .modal-form-icon {
@@ -656,6 +657,8 @@ img {
 .modal-form-comment:focus {
   border-color: #4d5ae5;
 }
+
+/* Button Submit */
 .button-submit {
   display: block;
   min-width: 169px;

@@ -642,7 +642,7 @@ img {
   resize: none;
   outline: transparent;
   background-color: transparent;
-
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 
@@ -657,7 +657,8 @@ img {
   border-color: #4d5ae5;
 }
 .button-submit {
-  width: 169px;
+  display: block;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
 
@@ -672,13 +673,20 @@ img {
   text-align: center;
   color: #fff;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   margin: 0 96px;
+}
+
+..button-submit:hover,
+.button-submit:focus {
+  background-color: #404bbf;
 }
 
 /* custom checkbox */
 
 .form-agreement {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 .agreement-checkbox {
   display: inline-flex;
@@ -688,12 +696,12 @@ img {
   height: 16px;
 
   color: transparent;
+  fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   margin-right: 8px;
 }

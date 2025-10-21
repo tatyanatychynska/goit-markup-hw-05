@@ -194,8 +194,8 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-button:hover,
-.main-button:focus {
+.btn:hover,
+.btn:focus {
   background-color: #404bbf;
 }
 
@@ -390,9 +390,10 @@ img {
 }
 .footer-wrapper {
   display: inline-block;
+}
+.footer-wrapper.logo {
   margin-right: 120px;
 }
-
 .footer-container {
   display: flex;
   justify-content: flex-start;
@@ -416,7 +417,6 @@ img {
   gap: 16px;
 }
 .social {
-  display: inline-block;
   margin-right: 80px;
 }
 .social-footer {
@@ -434,10 +434,6 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-}
-
-.footer-wrapper {
-  display: inline-block;
 }
 
 .footer-form {
@@ -483,11 +479,6 @@ img {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-btn:hover,
-.footer-btn:focus {
-  background-color: #404bbf;
 }
 
 .footer-btn-icon {
@@ -679,11 +670,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   margin: 0 96px;
-}
-
-..button-submit:hover,
-.button-submit:focus {
-  background-color: #404bbf;
 }
 
 /* custom checkbox */
